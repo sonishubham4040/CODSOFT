@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.project img {
+    width: 50%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+.section {
+    padding: 4rem 0;
+}
+
+.about-section {
+    background-color: rgb(119, 170, 218);
+}
+
+.projects-section {
+    background-color: #f2f2f2;
+}
+
+.skills-section {
+    background-color: #e6d470;
+}
+
+.achievements-section {
+    background-color: #f9f9f9;
+}
+
+.education-section {
+    background-color: #dd92ca;
+}
+
+.contact-section {
+    background-color: #fcfcfc;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header {
+        padding: 0.5rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 4.5rem;
+        right: 0;
+        background-color: #333;
+        padding: 1rem;
+    }
+
+    .nav-links.show a {
+        margin: 0.5rem;
+    }
+}
+
+html, body {
+    overflow-x: hidden;
+}
